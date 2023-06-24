@@ -24,12 +24,14 @@ Puede ser que como a mi me pasó al inicio salgan errores de que no se encuentra
 
 En caso igual no lo lea ingrese al archivo recomendador.py y cambie las líneas de la 22 a la 27 de la siguiente manera:
 
+```
 RUTA_FICHERO_PUNTUACION = '/ubicación completa del directorio/u.data'
 RUTA_FICHERO_USUARIO = '/ubicación completa del directorio/u.user'
 RUTA_FICHERO_ITEM = '/ubicación completa del directorio/u.item'
 RUTA_FICHERO_GENERO = '/ubicación completa del directorio/u.genre'
 SEPARADOR_TABULADOR = '\t'
 SEPARADOR_PIPE = '|'
+```
 
 Ya que según estuve leyendo a veces spark no ubica bien los archivos y para ayudar a simplificar las cosas lo mejor sería colocándole toda la ruta y no sólo el nombre del archivo.
 
