@@ -22,9 +22,8 @@ Luego se suben los archivos mencionados a las máquinas virtuales, luego se acce
 
 Puede ser que como a mi me pasó al inicio salgan errores de que no se encuentran los archivos en ese caso y para solucionar eso se tiene la indicación de tener los archivos en las dos máquinas y si se puede en la misma ubicación, por ejemplo en la carpeta Downloads donde se descarga por defecto.
 
-En caso igual no lo lea ingrese al archivo recomendador.py y cambie las líneas de la 21 a la 27 de la siguiente manera:
+En caso igual no lo lea ingrese al archivo recomendador.py y cambie las líneas de la 22 a la 27 de la siguiente manera:
 
-# Rutas y nombres de los ficheros y separador por defecto que utiliza
 RUTA_FICHERO_PUNTUACION = '/ubicación completa del directorio/u.data'
 RUTA_FICHERO_USUARIO = '/ubicación completa del directorio/u.user'
 RUTA_FICHERO_ITEM = '/ubicación completa del directorio/u.item'
