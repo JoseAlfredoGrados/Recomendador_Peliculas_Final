@@ -1,10 +1,10 @@
 # Recomendador_Peliculas_Final
-Jose Alfredo Grados Chuquitaype
+
 ## Indicaciones para poder ejecutarlo correctamente📦
 
 _Primero debemos asegurarnos de subir todos los archivos a las dos máquinas virtuales y si se puede en la misma ruta._
 
-## Clab 🛠️
+## Colab 🛠️
 
 _Para acceder al Colab puede dar click al siguiente enlace:_
 
@@ -22,7 +22,17 @@ Luego se suben los archivos mencionados a las máquinas virtuales, luego se acce
 
 Puede ser que como a mi me pasó al inicio salgan errores de que no se encuentran los archivos en ese caso y para solucionar eso se tiene la indicación de tener los archivos en las dos máquinas y si se puede en la misma ubicación, por ejemplo en la carpeta Downloads donde se descarga por defecto.
 
-En caso igual no lo lea ingrese al archivo recomendador.py y cambie las líneas
+En caso igual no lo lea ingrese al archivo recomendador.py y cambie las líneas de la 21 a la 27 de la siguiente manera:
+
+# Rutas y nombres de los ficheros y separador por defecto que utiliza
+RUTA_FICHERO_PUNTUACION = '/ubicación completa del directorio/u.data'
+RUTA_FICHERO_USUARIO = '/ubicación completa del directorio/u.user'
+RUTA_FICHERO_ITEM = '/ubicación completa del directorio/u.item'
+RUTA_FICHERO_GENERO = '/ubicación completa del directorio/u.genre'
+SEPARADOR_TABULADOR = '\t'
+SEPARADOR_PIPE = '|'
+
+Ya que según estuve leyendo a veces spark no ubica bien los archivos y para ayudar a simplificar las cosas lo mejor sería colocándole toda la ruta y no sólo el nombre del archivo.
 
 ## Autores ✒️
 
