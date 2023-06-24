@@ -2,7 +2,8 @@
 
 ## Indicaciones para poder ejecutarlo correctamente📦
 
-_Primero debemos asegurarnos de subir todos los archivos a las dos máquinas virtuales y si se puede en la misma ruta._
+_Primero debemos asegurarnos de subir todos los archivos a las dos máquinas virtuales y si se puede en la misma ruta.
+En esta rute github también se encuentran los archivos del dataset. De preferencia descargar todos juntos._
 
 ## Colab 🛠️
 
@@ -34,6 +35,14 @@ SEPARADOR_PIPE = '|'
 ```
 
 Ya que según estuve leyendo a veces spark no ubica bien los archivos y para ayudar a simplificar las cosas lo mejor sería colocándole toda la ruta y no sólo el nombre del archivo.
+
+## Desafíos Enfrentados y Nuevas Perspectivas
+
+El primero fue el construir el recomendador de películas ya que a pesar de tener el Spark y ya todo configurado lo que importa es que el recomendador funcione y sea entrenado correctamente.
+
+Luego de haberlo hecho y haber configurado el Spark en las máquinas virtuales, salió el error de que no encontraba el archivo y fue el cuál se lo consulté en la clase. Pero después de indagar y leer línea por línea la ejecución me di cuenta que al inicio había una primera vez en la que sí leía bien el archivo y luego ya no entonces concluí que el que no encontraba el archivo era el nodo trabajador. Entonces lo que hice fue poner los archivos también en el nodo worker y terminó funcionando correctamente.
+
+También Averiguando un poco vi que también estos modelos de recomandación no sólo los usan para eso, al ser NLP se puede utilizar para la clasificación de películas, ver las películas con más o menos puntuación, etc. Sería interesante poder hacer algo así también.
 
 ## Autores ✒️
 
